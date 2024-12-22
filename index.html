@@ -185,9 +185,8 @@
         function formatTime(date) {
             var h = date.getHours(),
                 m = date.getMinutes(),
-                s = date.getSeconds(),
                 m = m < 10 ? '0' + m : m;
-            return h + ':' + m + ':' + s;
+            return h + ':' + m;
         }
         function getValue(value) {
             return value && value.split(' ')[1];
